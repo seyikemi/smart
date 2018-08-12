@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Smart Pay</title>
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="js/jquery.js"></script>
+
+    <link rel="stylesheet" href="css/example.css">
+    <script src="js/example.js"></script>
+
+    <link rel="stylesheet" href="css/material-charts.css">
+    <script src="js/material-charts.js"></script>
+    <!-- Bootstrap core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Material Design Bootstrap -->
+    <link href="css/mdb.min.css" rel="stylesheet">
+    <!-- Your custom styles (optional) -->
+    <link href="css/style.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+    <link rel="stylesheet" href="pushbar/pushbar.css">
+</head>
+
+<body>
+
+
+    <nav>
+
+        <div id="mySidenav" class="sidenav">
+            <a style = "animation-delay: 0.3s " href="javascript:void(0)" class="closebtn " onclick="closeNav()">&times;</a>
+            <ul class="navbar-nav  pt-4" id="navactive">
+                <div class = "pt-3 pb-5">
+                    <div class = "text-center mx-auto ">
+                        <div class ="ellipse text-center mx-auto rounded-circle ">
+                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" 
+                                alt="profile image " class=" image2 rounded-circle">
+                        </div>
+                        <h5 class = "pb-0 mb-0">Sidius Komeh</h5>
+                        <p class = "pt-0 mt-0">Sidiuskomeh@gmail.com</p>
+                           
+                    </div>
+                       
+                </div>
+                <li class="nav-item  active">
+                    <a class="nav-link" href="#">Dashboard
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+                <li class="nav-item ">
+                    <a class="nav-link" href="#">About</a>
+                </li>
+
+            </ul>
+
+
+        </div>
+        <div class = "container">
+                <div class = "row" >
+        <div id="main" class="navbar navbar-dark nav-color fixed-top">
+            
+                            <div class = "col-md-3 col-lg-3 col-3" >
+                                    <img onclick="openNav()" class = "openbtn " style="width:25px;cursor:pointer ;color:white; animation-delay: 0.3s" 
+                                    src="img/svg/menu.svg"  alt="menu-icon">
+                            </div>
+                            <div class = "col-md-6 col-6" >
+                                    <div class ="text-center">
+                                            <div class="">
+                                                <div class="row">
+                                                    <div class="col">
+                                                        <p class="m-0 wallet-p">Wallet Balance</p>
+                                                        <h2 class="text-white">N8,000</h2>
+                                                    </div>
+                                                    <div class="col">
+                                                        <a href="#" class="btn btn-outline-primary waves-effect btn-nav ml-5">FUND WALLET</a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                            </div>
+                            <div class = "col-md-3 col-3" >
+                                    <div class="pull-right " id = "hideprof">
+              
+                                            <div class="">
+                                                    <a class="dash-text  " href="#">Hello Komeh</a>
+                                                <img src="https://mdbootstrap.com/img/Photos/Avatars/img%20%2810%29.jpg" alt="profile image " class=" dash-image rounded-circle">
+                                            </div>
+                            
+                                    </div>
+                            </div>
+                        </div>
+                    </div>
+       
+          
+           
+            
+          
+            
+        </div>
+     
+
+    </nav>
+    <div id="overlay">
+    </div>
+
+    <main class="pt-5 mx-auto mt-5 pb-3 col-12 col-sm-8 col-md-6 col-lg-6">
+            <div class="container pt-1 mt-5">
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="card text-center">
+                            <!-- Card content -->
+                            <div class="card-body">
+                                <div class="row">
+                                    <div class="col icon-bord">
+                                        <a href="scan.html" class="text-black">
+                                            <div class="icon-full mb-3">
+                                                <img src="img/svg/scan.svg" class="img-fluid" alt="scan">
+                                            </div>
+                                            Scan to Pay
+                                        </a>
+                                    </div>
+                                    <div class="col">
+                                        <a href="myqr.html" class="text-black">
+                                            <div class="icon-full mb-3">
+                                                <img src="img/svg/qr.svg" class="img-fluid" alt="scan">
+                                            </div>
+                                            My QR
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- Card -->
+                    </div>
+                </div>
+            </div>
+        </main>
+
+        <div class="container">
+                <!-- Nav tabs -->
+                <ul class="nav nav-tabs nav-justified navtaby" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link navlink-custom active" data-toggle="tab" href="#today" role="tab"> TODAY</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlink-custom" data-toggle="tab" href="#week" role="tab"> WEEK</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link navlink-custom" data-toggle="tab" href="#month" role="tab"> MONTH</a>
+                    </li>
+                </ul>
+                <!-- Tab panels -->
+                <div class="tab-content">
+                </div>
+           
+
+                        
+                <div class ="mb-5 pt-5 mx-auto col-12 col-sm-8 col-md-6 col-lg-6">
+                                <p class="text-center">Recent Transactions</p>
+                                <hr>
+                                <div class="card mb-3">
+                                    <div class="card-body py-0">
+                                        <table class="table">
+                                            <!-- <thead>
+                                                        <tr>
+                                                            <th scope="col">#</th>
+                                                            <th scope="col">First</th>
+                                                            <th scope="col">Last</th>
+                                                        </tr>
+                                                    </thead> -->
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row" class="px-0 py-4">
+                                                        <p class="t-sm">Jun 30</p>
+                                                    </th>
+                                                    <td>
+                                                        <p class="font-weight-bold m-0">Top Up my Wallet</p>
+                                                        <p class="trans-info mb-0">Wallet transfer at 4:99pm</p>
+                                                    </td>
+                                                    <td class="sec-colour t-sm px-0 py-4">N 5,400</td>
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row" class="px-0 py-4">
+                                                        <p class="t-sm">Jun 30</p>
+                                                    </th>
+                                                    <td>
+                                                        <p class="font-weight-bold m-0">Top Up my Wallet</p>
+                                                        <p class="trans-info mb-0">Wallet transfer at 4:99pm</p>
+                                                    </td>
+                                                    <td class="sec-colour t-sm px-0 py-4">N 5,400</td>
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>   
+                        </div>
+                      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+         
+
+    <!-- /Start your project here-->
+
+    <!-- SCRIPTS -->
+    <!-- JQuery -->
+
+    <script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
+    <!-- Bootstrap tooltips -->
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <!-- Bootstrap core JavaScript -->
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <!-- MDB core JavaScript -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+
+    <script src="pushbar/pushbar.js"></script>
+
+    <!-- Chart JS -->
+    <script src="js/chart-init.js"></script>
+
+    <!-- onScroll Js -->
+    <script src="js/onScroll.js"></script>
+
+
+    <script src="vendor/Chart.js/Chart.min.js"></script>
+    <!-- Push bar Custom Script -->
+    <script type="text/javascript">
+        new Pushbar({  
+            blur: true,
+              overlay: true,
+             
+        });</script>
+    <script>
+        function openNav() {
+            document.getElementById("mySidenav").style.width = "250px";
+            document.getElementById("main").style.marginLeft = "250px";
+            document.getElementById("overlay").style.display = "block";
+            document.getElementById("hideprof").style.display = "none";
+            $('.closebtn').addClass('animated jackInTheBox ');
+            $('.ellipse').addClass('animated jackInTheBox ');
+            $('.openbtn').removeClass('animated jackInTheBox ');
+
+        }
+
+        function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft = "0";
+            document.getElementById("overlay").style.display = "none";
+            document.getElementById("hideprof").style.display = "block";
+            $('.openbtn').addClass('animated jackInTheBox ');
+            $('.ellipse').removeClass('animated jackInTheBox ');
+            $('.closebtn').removeClass('animated jackInTheBox ');
+
+        }
+        // make a navtiem active
+        var btnContainer = document.getElementById("navactive");
+
+        // Get all buttons with class="btn" inside the container
+        var btns = btnContainer.getElementsByClassName("nav-item");
+
+        // Loop through the buttons and add the active class to the current/clicked button
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener("click", function () {
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+            });
+        }
+    </script>
+</body>
+
+</html>
