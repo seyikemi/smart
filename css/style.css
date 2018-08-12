@@ -1,0 +1,190 @@
+body, h1, h2 ,p,h3, h4, h5, h6{
+    font-family: "lato", sans-serif !important;
+}
+
+.bodycon{
+    background-image: linear-gradient(167deg, #052142, #204cbe);
+
+  
+}
+.pad-top{
+    padding-top:70px;
+    height:100%;
+    height:-moz-available; 
+    height: fill-available; 
+    height: -webkit-fill-available ; 
+    padding-bottom:70px;
+}
+.smart{
+
+
+ 
+    height: 65px;
+    font-family: Hobo Std !important;
+
+    font-weight: 500;
+ 
+    color: #ffffff;
+}
+.btn-yellow{
+    background-color: #ffc72f ;
+    width: 100% ;
+    color: black!important;
+}
+.font-small{
+    font-size: 10pt ;
+}
+.pad-card{
+    padding-bottom:80px;
+    padding-top: 10px ;
+}
+.bold{
+    font-weight: bold;
+
+}
+.bold-login{
+    font-weight: 450 ;
+}
+.text-small{
+    font-size: 13px ;
+}
+.underline{
+    text-decoration: underline; 
+    margin-left: 5px ;
+}
+/* dashboard */
+.navbar .navbar-3 .navbar-toggler-icon {
+    background-image: url('https://mdbootstrap.com/img/svg/hamburger1.svg?color=6a1b9a');
+}
+.dash-text{
+    color:white ;
+    font-size: 14px;
+    position:relative ; 
+    right:20px ;
+}
+.dash-image{
+    width:40px ;
+
+}
+.image2{
+    width:80px ;
+    box-shadow: 0 3px 6px 0 rgba(23, 23, 52, 0.61);
+    border: solid 5px #ffffff;
+
+}
+.ellipse{
+    background-image: linear-gradient(to bottom, #31326c, #2d2e60 47%, #242658);
+    width:90px;
+    padding:5px ;
+    
+}
+.margin-top{
+    margin-top:200px;
+}
+/* navtabs */
+.sidenav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    background-color: #fff;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+
+}
+.nav-color{
+    background-image: linear-gradient(259deg, #052142, #204cbe);
+}
+.sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #3a4759;
+    display: block;
+    transition: 0.3s;
+}
+
+
+
+
+.nav-item.active {
+   
+    background-image: linear-gradient(260deg, #052142, #204cbe);
+    padding-left: 0 ;
+}
+.navbar-nav .nav-link {
+    padding-left :50px ;
+}
+.nav-item{
+    padding-top:5px ;
+    padding-bottom:5px ;
+}
+.nav-link:hover {
+    color: #052142 !important ;
+    
+}
+
+@media only screen and (max-width: 990px) {
+
+
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+   
+
+
+}
+
+
+
+.sidenav a:hover {
+    color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+   
+}
+.openbtn{
+    color:white !important;
+}
+#main {
+    transition: margin-left .5s;
+ 
+}
+.overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 0;
+    background-color: #707070;
+  }
+  .overlay.enabled {
+    display: initial;
+  }
+  #overlay {
+    position: fixed;
+    display: none;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 2;
+    cursor: pointer;
+}
+.navbutton{
+    background-image: url(" ./img/svg/menu.svg ");
+}

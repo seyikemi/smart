@@ -1,0 +1,101 @@
+.view {
+    background: url("https://mdbootstrap.com/img/Photos/Others/img (50).jpg")no-repeat center center;
+    background-size: cover;
+}
+
+.from_left {
+    z-index: 2000 !important;
+}
+
+.smart-nav {
+    background: linear-gradient(90deg, #10377f, #042751);
+}
+
+.wallet-p {
+    color: #fbc02d;
+}
+
+.amount-val {
+    color: #fbc02d;
+    font-size: 60px;
+}
+
+.btn-nav {
+    white-space: nowrap;
+    color: white !important;
+    border-color: white !important;
+    padding: .84rem 1.14rem;
+}
+
+.f-14 {
+    font-size: 14px;
+}
+
+.profile-img {
+    width: 35px;
+    float: right;
+}
+
+.header-h {
+    height: 20% !important;
+}
+
+.navlink-custom {
+    color: #a2a2a2 !important;
+    background-color: white !important;
+    border-radius: 0px !important;
+    border: 1px solid gainsboro !important;
+}
+
+.navtaby {
+    box-shadow: 0 3px 8px #0000001c;
+}
+
+.nav-tabs .navlink-custom.active {
+    border-bottom: 3px solid #0d3373 !important;
+}
+
+.icon-full img {
+    height: 50px;
+}
+
+.icon-bord {
+    border-right: 1px solid gainsboro;
+}
+
+.sec-colour {
+    color: #1ece91;
+}
+
+.trans-info {
+    font-size: 12px;
+    margin-top: 3px;
+    color: darkgrey;
+}
+
+.t-sm {
+    font-size: 13px;
+}
+
+.menu-icon {
+    width: 22px;
+    margin-top: 16px;
+}
+
+.text-black {
+    color: black !important;
+}
+
+.header-s {
+    height: 12% !important;
+}
+
+.menu-icon-ii {
+    width: 22px;
+    margin-right: 14px;
+    margin-bottom: 8px;
+}
+
+.how-link {
+    color: #042751;
+}
